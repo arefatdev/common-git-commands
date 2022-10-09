@@ -116,6 +116,29 @@ git rm -rf  <dir_name>
 ```
 <br />  
 
+### 👛 Make a change
+Stages the file, ready for commit         
+```git add [file]```
+<br>
+Stage all changed files, ready for commit         
+```git add .```
+<br>
+Commit all staged files to versioned history         
+```git commit -m "commit message"```
+<br>
+Commit all your tracked files to versioned history         
+```git commit -am "commit message```
+<br>
+Unstages file, keeping the file changes         
+```git reset [file]```
+<br>
+Revert everything to the last commit         
+```git reset --hard```
+<br>
+Overwrite commit history with your own local history (force push):    
+```git push --force```
+<br>
+
 ### *Moving and renaming files*
 >moving the file to the directory:
 ```
@@ -187,6 +210,24 @@ for more info please refer to this:
 git cherry-pick <commit_reference>
 ```
 <br />  
+
+### 🧹 Cleanup
+Delete all untracked files    
+```git clean -f```
+<br>	
+Delete all untracked files and directories    
+```git clean -df```
+<br>
+Undo local modifications to all files   
+```git checkout -- ```
+<br>
+Unstage a file    
+```git reset HEAD myfile```
+<br>
+### 🗣Help
+When in doubt, use git help         
+```git command --help```
+<br><br>
 
 ### *Aliasing*
 *Giving a command an alias name means to rename a command with shorter or easier name you choose,  example: to rename 'git remote' command with 'git rmt'*
@@ -308,3 +349,13 @@ git push -f
 git clone <github_repo_url>
 ```
 <br />  
+
+
+### ⭐ [Git Immersion](https://gitimmersion.com/)
+Learn all the fundamentals of Git with this guided tour. This resource explains every important Git command while you execute them in your local machine.
+
+### ⭐ [Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
+I'm a big believer that visual aids helps you better understand and remember information. Which is why this resource is a must-see. Their diagrams and explanations are top-tier.
+
+### ⭐ [GitHub Minesweeper](https://profy.dev/project/github-minesweeper)
+Get a dose of nostalgia with this one! Learn on-the-job Git workflow while playing minesweeper with another player. So much fun you'll forget you're even learning.
